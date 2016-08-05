@@ -1,0 +1,61 @@
+.hackerFont {
+    font-family: monospace,serif;
+}
+h1 {
+    font-size: 45px;
+    line-height: 60px;
+    margin-bottom: 30px;
+}
+p {
+    font-size: 16px;
+    line-height: 20px;
+    color: #111;
+}
+.well {
+    color: darkgreen;
+    font-size: 16px;
+    line-height: 20px;
+}
+#page {
+    padding-left: 250px;
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+}
+
+#page.toggled {
+    padding-left:0px;
+    margin-left:45px;
+}
+
+#page-content{
+    width: 95%;
+    min-height: 900px;
+    position: absolute;
+    padding: 0px;
+    background: linear-gradient(180deg,#eee,#fff);
+    background-image: url(../images/bg_pattern.png);
+    background-repeat: repeat;
+    color: darkgreen;
+}
+
+#page.toggled #page-content{
+    position: absolute;
+    margin-right: -250px;
+}
+
+@media(min-width:768px) {
+
+  #page-content{
+    width: 100%;
+    padding: 0px;
+    position: relative;
+  }
+
+  #page.toggled #page-content{
+    position: relative;
+    margin-right:0px;
+  }
+
+}

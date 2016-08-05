@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Siddey</title>
+
+    <link href="bower_components/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/sidebar.css" rel="stylesheet">
+    <link href="css/page.css" rel="stylesheet">
+
+</head>
+
+<body>
+
+    <div id="page">
+
+        <!-- Sidebar -->
+        <div id="sidebar">
+            <ul class="sidebar-nav">
+
+            <div class="sidebar-toggle">
+              <a href="#menu-toggle" class="btn btn-default" id="menu-toggle">
+              <span class="glyphicon glyphicon-th-list"></span></a>
+            </div>
+                <li class="active">
+                    <a href="#"><span class="hackerFont">Home</span><span class="glyphicon glyphicon-home" id="home-glyph"></span></a>
+                </li>
+                <li>
+                    <a href="#"><span class="hackerFont">Blog</span><span class="glyphicon glyphicon-book" id="blog-glyph"></span></a>
+                </li>
+                <li>
+                    <a href="#"><span class="hackerFont">Projects</span><span class="glyphicon glyphicon-folder-open" id="projects-glyph"></span></a>
+                </li>
+                <li>
+                    <a href="#"><span class="hackerFont">Tutorials</span><span class="glyphicon glyphicon-tasks" id="tutorials-glyph"></span></a>
+                </li>
+                <li>
+                    <a href="#"><span class="hackerFont">Contact</span><span class="glyphicon glyphicon-envelope" id="contact-glyph"></span></a>
+                </li>
+            </ul>
+        </div>
+        <!-- #sidebar -->
+
+        <div class="hackerFont" id="page-content">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <h1>Test Content</h1>
+                        <p class="lead">Bacon ipsum dolor amet pork capicola turkey pastrami jowl, tail prosciutto filet mignon kielbasa drumstick strip steak sausage meatball turducken. </p>
+
+                        <p>Biltong andouille tongue turducken jerky, landjaeger cupim beef ribs t-bone jowl bresaola fatback boudin pancetta. Doner rump beef ribs turkey strip steak filet mignon corned beef sausage short ribs pancetta pork belly prosciutto short loin. Tail shoulder ground round tri-tip shank. Beef jowl venison, beef ribs meatball strip steak brisket hamburger alcatra cow. Corned beef boudin strip steak kielbasa ribeye, short loin brisket jerky pancetta shank venison. Meatball ham turducken t-bone strip steak ball tip beef fatback filet mignon cupim drumstick pork loin venison.</p>
+
+                        <p>Ham meatloaf andouille, hamburger sausage turkey beef ribs ribeye t-bone biltong. Beef ribs swine pork belly ribeye drumstick biltong, chicken picanha ham bacon tail filet mignon. Tail ham hock swine pancetta, strip steak shankle frankfurter shank t-bone brisket cupim hamburger tenderloin ham short ribs. Bresaola ground round salami cupim ham, filet mignon chuck tongue pastrami. Ham hock swine pig hamburger shoulder salami tail short ribs. Boudin tenderloin andouille, turkey prosciutto porchetta picanha sirloin alcatra. Rump beef ribs pork loin cupim.</p><hr>
+                        <div class="well">
+                            <marquee><strong>Hope you like what I have done with this project. If you don't like it and want me to come up with another variation, do tell. Good Luck! :)</strong></marquee>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- #page-content -->
+
+    </div>
+
+    <!-- #page -->
+    <script src="bower_components/jquery/dist/jquery.min.js"></script>
+    <script src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script>
+    $("#menu-toggle").click(function(e) {
+        e.preventDefault();
+        $("#page").toggleClass("toggled");
+    });
+    </script>
+
+</body>
+
+</html>

@@ -1,0 +1,115 @@
+#sidebar{
+    z-index: 1000;
+    position: fixed;
+    left:250px;
+    width:250px;
+    margin-left:-250px;
+    height: 100%;
+    overflow-y: auto;
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+    background: linear-gradient(180deg,#044e04,#0b600b);
+    box-shadow: inset -3px 0px 9px #111;
+}
+
+#sidebar .hackerFont {
+    font-size: 20px;
+    color: #fff;
+}
+
+#page.toggled #sidebar{
+    left:50px;
+}
+
+.sidebar-nav {
+    position: absolute;
+    top: 0;
+    width: 250px;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+
+.sidebar-nav > .sidebar-toggle a {
+    margin-left: 198px;
+    color: #fff;
+    background: none;
+    font-size: 28px;
+    border:0px;
+}
+
+.sidebar-nav > .sidebar-toggle a:active,
+.sidebar-nav > .sidebar-toggle a:focus {
+  color: #fff;
+  background: none;
+}
+
+
+.sidebar-nav li {
+    text-indent: 20px;
+    line-height: 70px;
+}
+
+.sidebar-nav li a {
+    display: block;
+    text-decoration: none;
+    color: #999999;
+}
+
+.sidebar-nav li a:hover, li.active {
+    text-decoration: none;
+    color: #fff;
+    background: rgba(255,255,255,0.2);
+}
+
+.sidebar-nav li a:active,
+.sidebar-nav li a:focus {
+    text-decoration: none;
+}
+
+.sidebar-nav li span.glyphicon{
+    font-size: 28px;
+    left: 250px;
+    transition: all 0.5s ease;
+    color: #fff;
+}
+
+#page.toggled .sidebar-nav li #home-glyph{
+  font-size: 28px;
+  left: 120px;
+  transition: all 0.5s ease;
+}
+#page.toggled .sidebar-nav li #blog-glyph{
+  font-size: 28px;
+  left: 120px;
+  transition: all 0.5s ease;
+}
+#page.toggled .sidebar-nav li #projects-glyph{
+  font-size: 28px;
+  left: 72px;
+  transition: all 0.5s ease;
+}
+#page.toggled .sidebar-nav li #tutorials-glyph{
+  font-size: 28px;
+  left: 63px;
+  transition: all 0.5s ease;
+}
+#page.toggled .sidebar-nav li #contact-glyph{
+  font-size: 28px;
+  left: 86px;
+  transition: all 0.5s ease;
+}
+
+@media(min-width:768px) {
+    #sidebar{
+        width: 250px;
+    }
+
+    #page.toggled #sidebar{
+        left: 50px;
+    }
+
+}
